@@ -47,7 +47,7 @@ public class AlbumsAdapter2 extends RecyclerView.Adapter<AlbumsAdapter2.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.album_card, parent, false);
+                .inflate(R.layout.album_card2, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -60,6 +60,19 @@ public class AlbumsAdapter2 extends RecyclerView.Adapter<AlbumsAdapter2.MyViewHo
 
         // loading album cover using Glide library
         Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
+
+        holder.thumbnail.setOnClickListener(new View.OnClickListener() {
+
+            String getname = holder.title.getText().toString();
+
+            @Override
+            public void onClick(View v) {
+                // Do something
+                Intent editintent = new Intent(mContext, DescActivity.class);
+                editintent.putExtra("eventname", getname);
+                mContext.startActivity(editintent);
+            }
+        });
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
 

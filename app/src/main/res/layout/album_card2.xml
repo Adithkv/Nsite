@@ -54,7 +54,7 @@
                 android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
                 android:layout_marginRight="5dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_insta" />
+                android:src="@drawable/ic_call" />
 
         </RelativeLayout>
 

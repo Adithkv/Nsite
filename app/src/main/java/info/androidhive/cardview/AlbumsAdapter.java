@@ -61,6 +61,19 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
         // loading album cover using Glide library
         Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
 
+        holder.thumbnail.setOnClickListener(new View.OnClickListener() {
+
+            String getname = holder.title.getText().toString();
+
+            @Override
+            public void onClick(View v) {
+                // Do something
+                Intent editintent = new Intent(mContext, EventActivity.class);
+                editintent.putExtra("deptname", getname);
+                mContext.startActivity(editintent);
+            }
+        });
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
 
             String getname = holder.title.getText().toString();
