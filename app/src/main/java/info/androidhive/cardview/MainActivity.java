@@ -124,11 +124,11 @@ public class MainActivity extends AppCompatActivity {
         a = new Album("Loud", 11, covers[6]);
         albumList.add(a);
 
-        a = new Album("Legend", 14, covers[7]);
-        albumList.add(a);
+        //a = new Album("Legend", 14, covers[7]);
+        //albumList.add(a);
 
-        a = new Album("Hello", 11, covers[8]);
-        albumList.add(a);
+        //a = new Album("Hello", 11, covers[8]);
+        //albumList.add(a);
 
         a = new Album("Greatest Hits", 17, covers[9]);
         albumList.add(a);

@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * Created by Ravi Tamada on 18/05/16.
  */
-public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHolder> {
+public class AlbumsAdapter2 extends RecyclerView.Adapter<AlbumsAdapter2.MyViewHolder> {
 
     private Context mContext;
     private List<Album> albumList;
@@ -39,7 +39,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
     }
 
 
-    public AlbumsAdapter(Context mContext, List<Album> albumList) {
+    public AlbumsAdapter2(Context mContext, List<Album> albumList) {
         this.mContext = mContext;
         this.albumList = albumList;
     }
@@ -68,8 +68,8 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
             @Override
             public void onClick(View v) {
                 // Do something
-                Intent editintent = new Intent(mContext, EventActivity.class);
-                editintent.putExtra("deptname", getname);
+                Intent editintent = new Intent(mContext, DescActivity.class);
+                editintent.putExtra("eventname", getname);
                 mContext.startActivity(editintent);
             }
         });

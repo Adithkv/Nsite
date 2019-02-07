@@ -1,5 +1,6 @@
 package info.androidhive.cardview;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -19,20 +21,34 @@ import java.util.List;
 
 public class EventActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private AlbumsAdapter adapter;
+    private AlbumsAdapter2 adapter;
     private List<Album> albumList;
+    public String deptname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.event_main);
+
+        Intent iin= getIntent();
+        Bundle b = iin.getExtras();
+
+        if(b!=null)
+        {
+            deptname =(String) b.get("deptname");
+            //eventname = j;
+            Toast.makeText(EventActivity.this, deptname,
+                    Toast.LENGTH_LONG).show();
+        }
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view2);
 
         albumList = new ArrayList<>();
-        adapter = new AlbumsAdapter(this, albumList);
+        adapter = new AlbumsAdapter2(this, albumList);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(mLayoutManager);
@@ -40,7 +56,12 @@ public class EventActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
-        prepareAlbums();
+        if( deptname.equals("Maroon 5") ) {
+            prepareAlbums1();
+        }
+        else {
+            prepareAlbums();
+        }
 
         try {
             Glide.with(this).load(R.drawable.cover).into((ImageView) findViewById(R.id.backdrop));
@@ -48,6 +69,30 @@ public class EventActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    private void prepareAlbums1() {
+        int[] covers = new int[]{
+                R.drawable.album1,
+                R.drawable.album2,
+                R.drawable.album3,
+                R.drawable.album4,
+                R.drawable.album5,
+                R.drawable.album6,
+                R.drawable.album7,
+                R.drawable.album8,
+                R.drawable.album9,
+                R.drawable.album10,
+                R.drawable.album11};
+
+        Album a = new Album("True Romance", 13, covers[0]);
+        albumList.add(a);
+
+        a = new Album("Xscpae", 8, covers[1]);
+        albumList.add(a);
+
+        adapter.notifyDataSetChanged();
+    }
+
 
     /**
      * Adding few albums for testing
