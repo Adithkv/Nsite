@@ -56,11 +56,14 @@ public class EventActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
-        if( deptname.equals("Maroon 5") ) {
+        if( deptname.equals("GENERAL") ) {
             prepareAlbums1();
         }
-        else {
-            prepareAlbums();
+        else if ( deptname.equals("AUTOMOBILE") ) {
+            prepareAlbums2();
+        }
+        else if ( deptname.equals("COMPUTER SCIENCE") ) {
+            prepareAlbums3();
         }
 
         try {
@@ -72,11 +75,11 @@ public class EventActivity extends AppCompatActivity {
 
     private void prepareAlbums1() {
         int[] covers = new int[]{
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
+                R.drawable.expo,
+                R.drawable.quiz,
+                R.drawable.strike,
+                R.drawable.p1,
+                R.drawable.p2,
                 R.drawable.album6,
                 R.drawable.album7,
                 R.drawable.album8,
@@ -84,10 +87,19 @@ public class EventActivity extends AppCompatActivity {
                 R.drawable.album10,
                 R.drawable.album11};
 
-        Album a = new Album("True Romance", 13, covers[0]);
+        Album a = new Album("MOTO EXPO", 13, covers[0]);
         albumList.add(a);
 
-        a = new Album("Xscpae", 8, covers[1]);
+        a = new Album("QUIZ", 8, covers[1]);
+        albumList.add(a);
+
+        a = new Album("STRIKE A POSE", 8, covers[2]);
+        albumList.add(a);
+
+        a = new Album("ENGINEERING PROJECTS", 8, covers[3]);
+        albumList.add(a);
+
+        a = new Album("PROJECTS (HIGH SCHOOL LEVEL and HIGHER SECONDARY LEVEL)", 8, covers[4]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
@@ -97,48 +109,95 @@ public class EventActivity extends AppCompatActivity {
     /**
      * Adding few albums for testing
      */
-    private void prepareAlbums() {
+    private void prepareAlbums2() {
         int[] covers = new int[]{
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
-                R.drawable.album6,
-                R.drawable.album7,
-                R.drawable.album8,
-                R.drawable.album9,
-                R.drawable.album10,
-                R.drawable.album11};
+                R.drawable.gear,
+                R.drawable.deci,
+                R.drawable.skill,
+                R.drawable.hill,
+                R.drawable.offro,
+                R.drawable.lady,
+                R.drawable.gokart,
+                R.drawable.motography,
+                R.drawable.auto,
+                R.drawable.stuntshow,
+                R.drawable.projectpresent};
 
-        Album a = new Album("True Romance", 13, covers[0]);
+        Album a = new Album("GEARBOX ASSEMBLING", 13, covers[0]);
         albumList.add(a);
 
-        a = new Album("Xscpae", 8, covers[1]);
+        a = new Album("DECIBEL TEST", 8, covers[1]);
         albumList.add(a);
 
-        a = new Album("Maroon 5", 11, covers[2]);
+        a = new Album("SKILLED DRIVER", 11, covers[2]);
         albumList.add(a);
 
-        a = new Album("Born to Die", 12, covers[3]);
+        a = new Album("HILL CLIMBING", 12, covers[3]);
         albumList.add(a);
 
-        a = new Album("Honeymoon", 14, covers[4]);
+        a = new Album("OFFROAD CYCLING", 14, covers[4]);
         albumList.add(a);
 
-        a = new Album("I Need a Doctor", 1, covers[5]);
+        a = new Album("LADIES! START", 1, covers[5]);
         albumList.add(a);
 
-        a = new Album("Loud", 11, covers[6]);
+        a = new Album("MOTOGRAPHY", 11, covers[6]);
         albumList.add(a);
 
-        a = new Album("Legend", 14, covers[7]);
+        a = new Album("AUTOLAPSE", 14, covers[7]);
         albumList.add(a);
 
-        a = new Album("Hello", 11, covers[8]);
+        a = new Album("STUNT SHOW", 11, covers[8]);
         albumList.add(a);
 
-        a = new Album("Greatest Hits", 17, covers[9]);
+        a = new Album("PROJECT PRESENTATION", 17, covers[9]);
+        albumList.add(a);
+
+        adapter.notifyDataSetChanged();
+    }
+
+    private void prepareAlbums3() {
+        int[] covers = new int[]{
+                R.drawable.food,
+                R.drawable.machine,
+                R.drawable.photobooth,
+                R.drawable.fog,
+                R.drawable.scavangr,
+                R.drawable.hardwareassembling5,
+                R.drawable.blindcodingportrait501,
+                R.drawable.arhunt,
+                R.drawable.paintball501,
+                R.drawable.blindpen,
+                R.drawable.projectpresent};
+
+        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        albumList.add(a);
+
+        a = new Album("MACHINE BULL", 8, covers[1]);
+        albumList.add(a);
+
+        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        albumList.add(a);
+
+        a = new Album("FOG ILLUSION", 12, covers[3]);
+        albumList.add(a);
+
+        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        albumList.add(a);
+
+        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        albumList.add(a);
+
+        a = new Album("BLIND CODING", 11, covers[6]);
+        albumList.add(a);
+
+        a = new Album("AR HUNT", 14, covers[7]);
+        albumList.add(a);
+
+        a = new Album("PAINT BALL", 11, covers[8]);
+        albumList.add(a);
+
+        a = new Album("BLIND PENALTY", 17, covers[9]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "479918647234",
+    "firebase_url": "https://nsite-2k19.firebaseio.com",
+    "project_id": "nsite-2k19",
+    "storage_bucket": "nsite-2k19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479918647234:android:a9967d7e5daa34ac",
+        "android_client_info": {
+          "package_name": "info.androidhive.cardview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479918647234-uklc2d2eh49f20ipkpo8fbs9c93kr1c4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.androidhive.cardview",
+            "certificate_hash": "d5376801a2f8e6de5e6f84a58ab6103fa10ee60b"
+          }
+        },
+        {
+          "client_id": "479918647234-55m88ag8dr8pvl4te8kkcc5172kh3e47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALVwybogH7InRU1Kq05DNfxPo884TM_LE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479918647234-55m88ag8dr8pvl4te8kkcc5172kh3e47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

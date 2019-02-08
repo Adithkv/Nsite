@@ -13,8 +13,10 @@ import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         prepareAlbums();
 
         try {
-            Glide.with(this).load(R.drawable.cover).into((ImageView) findViewById(R.id.backdrop));
+            Glide.with(this).load(R.drawable.pic1).into((ImageView) findViewById(R.id.backdrop));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -61,6 +63,19 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.action_notif:
+                Toast.makeText(MainActivity.this, "Notification On",
+                        Toast.LENGTH_LONG).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     /**
@@ -100,47 +115,47 @@ public class MainActivity extends AppCompatActivity {
      */
     private void prepareAlbums() {
         int[] covers = new int[]{
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
-                R.drawable.album6,
-                R.drawable.album7,
-                R.drawable.album8,
+                R.drawable.general,
+                R.drawable.aue,
+                R.drawable.cse,
+                R.drawable.ec,
+                R.drawable.eee,
+                R.drawable.me,
+                R.drawable.mtr,
+                R.drawable.mca,
                 R.drawable.album9,
                 R.drawable.album10,
                 R.drawable.album11};
 
-        Album a = new Album("True Romance", 13, covers[0]);
+        Album a = new Album("GENERAL", 5, covers[0]);
         albumList.add(a);
 
-        a = new Album("Xscpae", 8, covers[1]);
+        a = new Album("AUTOMOBILE", 11, covers[1]);
         albumList.add(a);
 
-        a = new Album("Maroon 5", 11, covers[2]);
+        a = new Album("COMPUTER SCIENCE", 17, covers[2]);
         albumList.add(a);
 
-        a = new Album("Born to Die", 12, covers[3]);
+        a = new Album("ELECTRONICS AND COMMUNICATION", 10, covers[3]);
         albumList.add(a);
 
-        a = new Album("Honeymoon", 14, covers[4]);
+        a = new Album("ELECTRICAL AND ELECTRONICS", 7, covers[4]);
         albumList.add(a);
 
-        a = new Album("I Need a Doctor", 1, covers[5]);
+        a = new Album("MECHANICAL", 8, covers[5]);
         albumList.add(a);
 
-        a = new Album("Loud", 11, covers[6]);
+        a = new Album("MECHATRONICS", 8, covers[6]);
         albumList.add(a);
 
-        //a = new Album("Legend", 14, covers[7]);
-        //albumList.add(a);
+        a = new Album("MASTER OF COMPUTER APPLICATIONS", 3, covers[7]);
+        albumList.add(a);
 
         //a = new Album("Hello", 11, covers[8]);
         //albumList.add(a);
 
-        a = new Album("Greatest Hits", 17, covers[9]);
-        albumList.add(a);
+        //a = new Album("Greatest Hits", 17, covers[9]);
+        //albumList.add(a);
 
         adapter.notifyDataSetChanged();
     }

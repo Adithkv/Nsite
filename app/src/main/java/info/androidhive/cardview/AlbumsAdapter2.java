@@ -56,7 +56,7 @@ public class AlbumsAdapter2 extends RecyclerView.Adapter<AlbumsAdapter2.MyViewHo
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         Album album = albumList.get(position);
         holder.title.setText(album.getName());
-        holder.count.setText(album.getNumOfSongs() + " songs");
+        //holder.count.setText(album.getNumOfSongs() + " songs");
 
         // loading album cover using Glide library
         Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
@@ -90,7 +90,7 @@ public class AlbumsAdapter2 extends RecyclerView.Adapter<AlbumsAdapter2.MyViewHo
         holder.overflow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showPopupMenu(holder.overflow);
+                //showPopupMenu(holder.overflow);
             }
         });
     }
@@ -98,6 +98,7 @@ public class AlbumsAdapter2 extends RecyclerView.Adapter<AlbumsAdapter2.MyViewHo
     /**
      * Showing popup menu when tapping on 3 dots
      */
+    /*
     private void showPopupMenu(View view) {
         // inflate menu
         PopupMenu popup = new PopupMenu(mContext, view);
@@ -106,10 +107,12 @@ public class AlbumsAdapter2 extends RecyclerView.Adapter<AlbumsAdapter2.MyViewHo
         popup.setOnMenuItemClickListener(new MyMenuItemClickListener());
         popup.show();
     }
+    */
 
     /**
      * Click listener for popup menu items
      */
+    /*
     class MyMenuItemClickListener implements PopupMenu.OnMenuItemClickListener {
 
         public MyMenuItemClickListener() {
@@ -129,6 +132,7 @@ public class AlbumsAdapter2 extends RecyclerView.Adapter<AlbumsAdapter2.MyViewHo
             return false;
         }
     }
+    */
 
     @Override
     public int getItemCount() {

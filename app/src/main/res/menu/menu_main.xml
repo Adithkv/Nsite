@@ -2,6 +2,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="info.androidhive.cardview.MainActivity" >
+    <item
+        android:id="@+id/action_notif"
+        android:icon="@drawable/ic_bell"
+        android:title="action_favorite"
+        app:showAsAction="ifRoom"/>
     <item android:id="@+id/action_contact"
         android:title="Contact"
         android:orderInCategory="100"

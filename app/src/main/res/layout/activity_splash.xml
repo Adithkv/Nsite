@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginStart="@android:dimen/dialog_min_width_major"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="@android:dimen/dialog_min_width_major"
+        android:layout_marginRight="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/backdrop_title"
+        android:textSize="30sp" />
+</RelativeLayout>
