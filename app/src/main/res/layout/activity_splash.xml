@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/album_title">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/edgeicon" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="69dp"
-        android:layout_marginStart="@android:dimen/dialog_min_width_major"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginEnd="@android:dimen/dialog_min_width_major"
-        android:layout_marginRight="0dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/backdrop_title"
-        android:textSize="30sp" />
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="NSITE 2k19"
+        android:textColor="@color/viewBg"
+        android:textSize="12dp" />
+
 </RelativeLayout>
