@@ -65,6 +65,21 @@ public class EventActivity extends AppCompatActivity {
         else if ( deptname.equals("COMPUTER SCIENCE") ) {
             prepareAlbums3();
         }
+        else if ( deptname.equals("ELECTRONICS AND COMMUNICATION") ) {
+            prepareAlbums4();
+        }
+        else if ( deptname.equals("ELECTRICAL AND ELECTRONICS") ) {
+            prepareAlbums5();
+        }
+        else if ( deptname.equals("MECHANICAL") ) {
+            prepareAlbums6();
+        }
+        else if ( deptname.equals("MECHATRONICS") ) {
+            prepareAlbums7();
+        }
+        else if ( deptname.equals("MASTER OF COMPUTER APPLICATIONS") ) {
+            prepareAlbums8();
+        }
 
         try {
             Glide.with(this).load(R.drawable.cover).into((ImageView) findViewById(R.id.backdrop));
@@ -157,6 +172,241 @@ public class EventActivity extends AppCompatActivity {
     }
 
     private void prepareAlbums3() {
+        int[] covers = new int[]{
+                R.drawable.food,
+                R.drawable.machine,
+                R.drawable.photobooth,
+                R.drawable.fog,
+                R.drawable.scavangr,
+                R.drawable.hardwareassembling5,
+                R.drawable.blindcodingportrait501,
+                R.drawable.arhunt,
+                R.drawable.paintball501,
+                R.drawable.blindpen,
+                R.drawable.projectpresent};
+
+        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        albumList.add(a);
+
+        a = new Album("MACHINE BULL", 8, covers[1]);
+        albumList.add(a);
+
+        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        albumList.add(a);
+
+        a = new Album("FOG ILLUSION", 12, covers[3]);
+        albumList.add(a);
+
+        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        albumList.add(a);
+
+        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        albumList.add(a);
+
+        a = new Album("BLIND CODING", 11, covers[6]);
+        albumList.add(a);
+
+        a = new Album("AR HUNT", 14, covers[7]);
+        albumList.add(a);
+
+        a = new Album("PAINT BALL", 11, covers[8]);
+        albumList.add(a);
+
+        a = new Album("BLIND PENALTY", 17, covers[9]);
+        albumList.add(a);
+
+        adapter.notifyDataSetChanged();
+    }
+
+    private void prepareAlbums4() {
+        int[] covers = new int[]{
+                R.drawable.food,
+                R.drawable.machine,
+                R.drawable.photobooth,
+                R.drawable.fog,
+                R.drawable.scavangr,
+                R.drawable.hardwareassembling5,
+                R.drawable.blindcodingportrait501,
+                R.drawable.arhunt,
+                R.drawable.paintball501,
+                R.drawable.blindpen,
+                R.drawable.projectpresent};
+
+        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        albumList.add(a);
+
+        a = new Album("MACHINE BULL", 8, covers[1]);
+        albumList.add(a);
+
+        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        albumList.add(a);
+
+        a = new Album("FOG ILLUSION", 12, covers[3]);
+        albumList.add(a);
+
+        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        albumList.add(a);
+
+        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        albumList.add(a);
+
+        a = new Album("BLIND CODING", 11, covers[6]);
+        albumList.add(a);
+
+        a = new Album("AR HUNT", 14, covers[7]);
+        albumList.add(a);
+
+        a = new Album("PAINT BALL", 11, covers[8]);
+        albumList.add(a);
+
+        a = new Album("BLIND PENALTY", 17, covers[9]);
+        albumList.add(a);
+
+        adapter.notifyDataSetChanged();
+    }
+
+    private void prepareAlbums5() {
+        int[] covers = new int[]{
+                R.drawable.food,
+                R.drawable.machine,
+                R.drawable.photobooth,
+                R.drawable.fog,
+                R.drawable.scavangr,
+                R.drawable.hardwareassembling5,
+                R.drawable.blindcodingportrait501,
+                R.drawable.arhunt,
+                R.drawable.paintball501,
+                R.drawable.blindpen,
+                R.drawable.projectpresent};
+
+        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        albumList.add(a);
+
+        a = new Album("MACHINE BULL", 8, covers[1]);
+        albumList.add(a);
+
+        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        albumList.add(a);
+
+        a = new Album("FOG ILLUSION", 12, covers[3]);
+        albumList.add(a);
+
+        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        albumList.add(a);
+
+        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        albumList.add(a);
+
+        a = new Album("BLIND CODING", 11, covers[6]);
+        albumList.add(a);
+
+        a = new Album("AR HUNT", 14, covers[7]);
+        albumList.add(a);
+
+        a = new Album("PAINT BALL", 11, covers[8]);
+        albumList.add(a);
+
+        a = new Album("BLIND PENALTY", 17, covers[9]);
+        albumList.add(a);
+
+        adapter.notifyDataSetChanged();
+    }
+
+    private void prepareAlbums6() {
+        int[] covers = new int[]{
+                R.drawable.food,
+                R.drawable.machine,
+                R.drawable.photobooth,
+                R.drawable.fog,
+                R.drawable.scavangr,
+                R.drawable.hardwareassembling5,
+                R.drawable.blindcodingportrait501,
+                R.drawable.arhunt,
+                R.drawable.paintball501,
+                R.drawable.blindpen,
+                R.drawable.projectpresent};
+
+        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        albumList.add(a);
+
+        a = new Album("MACHINE BULL", 8, covers[1]);
+        albumList.add(a);
+
+        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        albumList.add(a);
+
+        a = new Album("FOG ILLUSION", 12, covers[3]);
+        albumList.add(a);
+
+        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        albumList.add(a);
+
+        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        albumList.add(a);
+
+        a = new Album("BLIND CODING", 11, covers[6]);
+        albumList.add(a);
+
+        a = new Album("AR HUNT", 14, covers[7]);
+        albumList.add(a);
+
+        a = new Album("PAINT BALL", 11, covers[8]);
+        albumList.add(a);
+
+        a = new Album("BLIND PENALTY", 17, covers[9]);
+        albumList.add(a);
+
+        adapter.notifyDataSetChanged();
+    }
+
+    private void prepareAlbums7() {
+        int[] covers = new int[]{
+                R.drawable.food,
+                R.drawable.machine,
+                R.drawable.photobooth,
+                R.drawable.fog,
+                R.drawable.scavangr,
+                R.drawable.hardwareassembling5,
+                R.drawable.blindcodingportrait501,
+                R.drawable.arhunt,
+                R.drawable.paintball501,
+                R.drawable.blindpen,
+                R.drawable.projectpresent};
+
+        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        albumList.add(a);
+
+        a = new Album("MACHINE BULL", 8, covers[1]);
+        albumList.add(a);
+
+        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        albumList.add(a);
+
+        a = new Album("FOG ILLUSION", 12, covers[3]);
+        albumList.add(a);
+
+        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        albumList.add(a);
+
+        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        albumList.add(a);
+
+        a = new Album("BLIND CODING", 11, covers[6]);
+        albumList.add(a);
+
+        a = new Album("AR HUNT", 14, covers[7]);
+        albumList.add(a);
+
+        a = new Album("PAINT BALL", 11, covers[8]);
+        albumList.add(a);
+
+        a = new Album("BLIND PENALTY", 17, covers[9]);
+        albumList.add(a);
+
+        adapter.notifyDataSetChanged();
+    }
+
+    private void prepareAlbums8() {
         int[] covers = new int[]{
                 R.drawable.food,
                 R.drawable.machine,
