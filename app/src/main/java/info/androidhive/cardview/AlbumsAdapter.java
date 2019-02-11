@@ -1,5 +1,6 @@
 package info.androidhive.cardview;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -95,13 +96,37 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
             @Override
             public void onClick(View view) {
                 //showPopupMenu(holder.overflow);
+                Uri uri = Uri.parse("https://instagram.com/nsite2k19?utm_source=ig_profile_share&igshid=vmqpaurfflt3");
 
                 String getname = holder.title.getText().toString();
-                if( getname.equals( "Maroon 5" ) ) {
+                if( getname.equals( "COMPUTER SCIENCE" ) ) {
+                    uri = Uri.parse("https://instagram.com/brocode2k19?utm_source=ig_profile_share&igshid=122widnt5ycks");
+                }
+                else if( getname.equals( "MECHANICAL" ) ) {
+                    uri = Uri.parse("https://instagram.com/mechmerize2019?utm_source=ig_profile_share&igshid=16ry9c2bgqx1n");
+                }
+                else if( getname.equals( "MECHATRONICS" ) ) {
+                    uri = Uri.parse("https://instagram.com/yantrikxix?utm_source=ig_profile_share&igshid=5pigno1tfx0k");
+                }
+                else if( getname.equals( "ELECTRONICS AND COMMUNICATION" ) ) {
+                    uri = Uri.parse("https://www.instagram.com/eclectique2k19_/");
+                }
+                else {
+                    uri = Uri.parse("https://instagram.com/nsite2k19?utm_source=ig_profile_share&igshid=vmqpaurfflt3");
+                }
 
+                Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+                likeIng.setPackage("com.instagram.android");
+
+                try {
+                    mContext.startActivity(likeIng);
+                } catch (ActivityNotFoundException e) {
+                    mContext.startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://instagram.com/")));
                 }
             }
         });
+
     }
 
     /**
