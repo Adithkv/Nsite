@@ -156,16 +156,19 @@ public class EventActivity extends AppCompatActivity {
         a = new Album("LADIES! START", 1, covers[5]);
         albumList.add(a);
 
-        a = new Album("MOTOGRAPHY", 11, covers[6]);
+        a = new Album("GO-KART RIDE", 1, covers[6]);
         albumList.add(a);
 
-        a = new Album("AUTOLAPSE", 14, covers[7]);
+        a = new Album("MOTOGRAPHY", 11, covers[7]);
         albumList.add(a);
 
-        a = new Album("STUNT SHOW", 11, covers[8]);
+        a = new Album("AUTOLAPSE", 14, covers[8]);
         albumList.add(a);
 
-        a = new Album("PROJECT PRESENTATION", 17, covers[9]);
+        a = new Album("STUNT SHOW", 11, covers[9]);
+        albumList.add(a);
+
+        a = new Album("PROJECT PRESENTATION", 17, covers[10]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
@@ -182,6 +185,12 @@ public class EventActivity extends AppCompatActivity {
                 R.drawable.blindcodingportrait501,
                 R.drawable.arhunt,
                 R.drawable.paintball501,
+                R.drawable.blindpen,
+                R.drawable.blindpen,
+                R.drawable.blindpen,
+                R.drawable.blindpen,
+                R.drawable.blindpen,
+                R.drawable.blindpen,
                 R.drawable.blindpen,
                 R.drawable.projectpresent};
 
@@ -213,6 +222,27 @@ public class EventActivity extends AppCompatActivity {
         albumList.add(a);
 
         a = new Album("BLIND PENALTY", 17, covers[9]);
+        albumList.add(a);
+
+        a = new Album("TENNIS SMASH", 17, covers[10]);
+        albumList.add(a);
+
+        a = new Album("FIFA", 17, covers[11]);
+        albumList.add(a);
+
+        a = new Album("NFS", 17, covers[12]);
+        albumList.add(a);
+
+        a = new Album("PUBG", 17, covers[13]);
+        albumList.add(a);
+
+        a = new Album("RUBIX CUBE", 17, covers[14]);
+        albumList.add(a);
+
+        a = new Album("DIGIMANIA", 17, covers[15]);
+        albumList.add(a);
+
+        a = new Album("MACHINE LEARNING USING PYTHON", 17, covers[16]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
@@ -232,34 +262,34 @@ public class EventActivity extends AppCompatActivity {
                 R.drawable.blindpen,
                 R.drawable.projectpresent};
 
-        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        Album a = new Album("TRICKY CIRCUITS", 13, covers[0]);
         albumList.add(a);
 
-        a = new Album("MACHINE BULL", 8, covers[1]);
+        a = new Album("CIRCUITRIX", 8, covers[1]);
         albumList.add(a);
 
-        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        a = new Album("GOOGLE HUNT", 11, covers[2]);
         albumList.add(a);
 
-        a = new Album("FOG ILLUSION", 12, covers[3]);
+        a = new Album("DEAM FACTORY", 12, covers[3]);
         albumList.add(a);
 
-        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        a = new Album("INNOVANCE (Paper Presentation)", 14, covers[4]);
         albumList.add(a);
 
-        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        a = new Album("V R GAMING", 1, covers[5]);
         albumList.add(a);
 
-        a = new Album("BLIND CODING", 11, covers[6]);
+        a = new Album("FLUORO SOCCER 2019", 11, covers[6]);
         albumList.add(a);
 
-        a = new Album("AR HUNT", 14, covers[7]);
+        a = new Album("RAM & ROM", 14, covers[7]);
         albumList.add(a);
 
-        a = new Album("PAINT BALL", 11, covers[8]);
+        a = new Album("OPTICAL VILLAGE", 14, covers[8]);
         albumList.add(a);
 
-        a = new Album("BLIND PENALTY", 17, covers[9]);
+        a = new Album("DRONE SHOW", 14, covers[9]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
@@ -279,34 +309,25 @@ public class EventActivity extends AppCompatActivity {
                 R.drawable.blindpen,
                 R.drawable.projectpresent};
 
-        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        Album a = new Album("CIRCUIT DEBUGGING", 13, covers[0]);
         albumList.add(a);
 
-        a = new Album("MACHINE BULL", 8, covers[1]);
+        a = new Album("BOMB DIFFUSION", 8, covers[1]);
         albumList.add(a);
 
-        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        a = new Album("ROBOSTRIKE", 11, covers[2]);
         albumList.add(a);
 
-        a = new Album("FOG ILLUSION", 12, covers[3]);
+        a = new Album("CONTRAPTION", 12, covers[3]);
         albumList.add(a);
 
-        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        a = new Album("CORNER OF CHAOS", 14, covers[4]);
         albumList.add(a);
 
-        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        a = new Album("KSEB EXPO", 1, covers[5]);
         albumList.add(a);
 
-        a = new Album("BLIND CODING", 11, covers[6]);
-        albumList.add(a);
-
-        a = new Album("AR HUNT", 14, covers[7]);
-        albumList.add(a);
-
-        a = new Album("PAINT BALL", 11, covers[8]);
-        albumList.add(a);
-
-        a = new Album("BLIND PENALTY", 17, covers[9]);
+        a = new Album("AUTONOMOUS ROBOTICS", 11, covers[6]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
@@ -326,34 +347,28 @@ public class EventActivity extends AppCompatActivity {
                 R.drawable.blindpen,
                 R.drawable.projectpresent};
 
-        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        Album a = new Album("PIT STOP", 13, covers[0]);
         albumList.add(a);
 
-        a = new Album("MACHINE BULL", 8, covers[1]);
+        a = new Album("HYDRO LAUNCH", 8, covers[1]);
         albumList.add(a);
 
-        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        a = new Album("CAD MODELLING", 11, covers[2]);
         albumList.add(a);
 
-        a = new Album("FOG ILLUSION", 12, covers[3]);
+        a = new Album("GAME OF THRONES", 12, covers[3]);
         albumList.add(a);
 
-        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        a = new Album("FOAM FOOTBALL", 14, covers[4]);
         albumList.add(a);
 
-        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        a = new Album("SUMO WRESTLING", 1, covers[5]);
         albumList.add(a);
 
-        a = new Album("BLIND CODING", 11, covers[6]);
+        a = new Album("ARCHERY", 11, covers[6]);
         albumList.add(a);
 
-        a = new Album("AR HUNT", 14, covers[7]);
-        albumList.add(a);
-
-        a = new Album("PAINT BALL", 11, covers[8]);
-        albumList.add(a);
-
-        a = new Album("BLIND PENALTY", 17, covers[9]);
+        a = new Album("E- mobility skill development workshop", 14, covers[7]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
@@ -373,34 +388,28 @@ public class EventActivity extends AppCompatActivity {
                 R.drawable.blindpen,
                 R.drawable.projectpresent};
 
-        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        Album a = new Album("CLASH OF BOTS (ROBOWAR)", 13, covers[0]);
         albumList.add(a);
 
-        a = new Album("MACHINE BULL", 8, covers[1]);
+        a = new Album("DIRT RACE (ROBORACE)", 8, covers[1]);
         albumList.add(a);
 
-        a = new Album("PHOTOBOOTH", 11, covers[2]);
+        a = new Album("ROBO SOCCER", 11, covers[2]);
         albumList.add(a);
 
-        a = new Album("FOG ILLUSION", 12, covers[3]);
+        a = new Album("LINE FOLLOWER", 12, covers[3]);
         albumList.add(a);
 
-        a = new Album("SCAVENGER HUNT", 14, covers[4]);
+        a = new Album("TRANSPORTER", 14, covers[4]);
         albumList.add(a);
 
-        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
+        a = new Album("RC RACE", 1, covers[5]);
         albumList.add(a);
 
-        a = new Album("BLIND CODING", 11, covers[6]);
+        a = new Album("RC SHOW", 11, covers[6]);
         albumList.add(a);
 
-        a = new Album("AR HUNT", 14, covers[7]);
-        albumList.add(a);
-
-        a = new Album("PAINT BALL", 11, covers[8]);
-        albumList.add(a);
-
-        a = new Album("BLIND PENALTY", 17, covers[9]);
+        a = new Album("ROBO EXPO", 14, covers[7]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
@@ -420,34 +429,13 @@ public class EventActivity extends AppCompatActivity {
                 R.drawable.blindpen,
                 R.drawable.projectpresent};
 
-        Album a = new Album("FOOD MANIA", 13, covers[0]);
+        Album a = new Album("BRAIN OF TEQTIS", 13, covers[0]);
         albumList.add(a);
 
-        a = new Album("MACHINE BULL", 8, covers[1]);
+        a = new Album("MINUTE TO WIN IT", 8, covers[1]);
         albumList.add(a);
 
-        a = new Album("PHOTOBOOTH", 11, covers[2]);
-        albumList.add(a);
-
-        a = new Album("FOG ILLUSION", 12, covers[3]);
-        albumList.add(a);
-
-        a = new Album("SCAVENGER HUNT", 14, covers[4]);
-        albumList.add(a);
-
-        a = new Album("HARDWARE ASSEMBLING", 1, covers[5]);
-        albumList.add(a);
-
-        a = new Album("BLIND CODING", 11, covers[6]);
-        albumList.add(a);
-
-        a = new Album("AR HUNT", 14, covers[7]);
-        albumList.add(a);
-
-        a = new Album("PAINT BALL", 11, covers[8]);
-        albumList.add(a);
-
-        a = new Album("BLIND PENALTY", 17, covers[9]);
+        a = new Album("Kalaprabha", 11, covers[2]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
